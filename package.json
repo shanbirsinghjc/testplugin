@@ -1,7 +1,7 @@
 {
-  "name": "com.oshoham.unity-google-cloud-streaming-speech-to-text",
+  "name": "com.test.unity-google-cloud-streaming-speech-to-text",
   "displayName": "Google Cloud Streaming Speech-to-Text",
-  "version": "0.1.8",
+  "version": "0.1",
   "description": "A cross-platform Unity plugin that uses the Google Cloud Speech-To-Text API to perform real-time, streaming transcription of microphone input.",
   "files": [
     "package.json.meta",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oshoham/UnityGoogleCloudStreamingSpeechToText.git"
+    "url": "git+https://github.com/shanbirsinghjc/testplugin.git"
   },
   "unity": "2019.1",
   "keywords": [
@@ -32,7 +32,7 @@
   "author": "Oren Shoham",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oshoham/UnityGoogleCloudStreamingSpeechToText/issues"
+    "url": "https://github.com/shanbirsinghjc/testplugin/issues"
   },
-  "homepage": "https://github.com/oshoham/UnityGoogleCloudStreamingSpeechToText#readme"
+  "homepage": "https://github.com/shanbirsinghjc/testplugin#readme"
 }
