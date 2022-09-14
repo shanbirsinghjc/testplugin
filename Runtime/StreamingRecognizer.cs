@@ -227,12 +227,12 @@ namespace GoogleCloudStreamingSpeechToText {
         }
 
         private async Task HandleTranscriptionResponses() {
-            while (_streamingCall.GetResponseStream().Current.IsInitialized()) {
-                if (_streamingCall.GetResponseStream().Current.Results.Count <= 0) {
+            while (await _streamingCall.ResponseStream.MoveNext(default)) {
+                if (_streamingCall.ResponseStream.Current.Results.Count <= 0) {
                     continue;
                 }
 
-                StreamingRecognitionResult result = _streamingCall.GetResponseStream().Current.Results[0];
+                StreamingRecognitionResult result = _streamingCall.ResponseStream.Current.Results[0];
                 if (result.Alternatives.Count <= 0) {
                     continue;
                 }
